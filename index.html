@@ -48,6 +48,12 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+      .client-back {
+        background: url("./images/bg_cup.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+      }
     </style>
   </head>
   <body class="font-manrope">
@@ -222,7 +228,7 @@
         class="mb-24 flex flex-col lg:flex-row lg:justify-between gap-10 btn-back px-5 lg:px-[55px]"
       >
         <!-- text div -->
-        <div class="flex items-center">
+        <div class="flex items-center client-back">
           <div class="pt-16">
             <h2 class="text-white text-5xl font-extrabold mb-5">
               Meet Our Super <br />Fans
@@ -379,6 +385,71 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <!-- Footer section-->
+    <footer
+      class="lg:px-32"
+      style="
+        background: linear-gradient(
+          270deg,
+          rgba(255, 0, 0, 0.1) 0%,
+          rgba(255, 137, 56, 0.1) 100%
+        );
+      "
+    >
+      <div class="flex py-10 px-3 md:px-12 justify-between">
+        <img src="./images/cup.png" alt="" />
+        <div class="flex gap-3 md:gap-10 items-center">
+          <p class="text-[#494949] md:text-xl font-medium leading-10">
+            Ready to get started?
+          </p>
+          <button class="btn btn-back rounded-lg text-white font-semibold">
+            Get Started
+          </button>
+        </div>
+      </div>
+      <div class="footer px-10 text-base-content">
+        <div>
+          <span class="text-[#1C1C1C] font-semibold text-lg">Quick Links</span>
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">About Us</a>
+          <a class="link link-hover">Insurance</a>
+          <a class="link link-hover">Privacy Policy</a>
+        </div>
+        <div>
+          <span class="text-[#1C1C1C] font-semibold text-lg">Our Service</span>
+          <a class="link link-hover">Life Insurance</a>
+          <a class="link link-hover">Car Insurance</a>
+          <a class="link link-hover">Health Insurance</a>
+          <a class="link link-hover">House Insurance</a>
+        </div>
+        <div>
+          <span class="text-[#1C1C1C] font-semibold text-lg">Help</span>
+          <a class="link link-hover">FAQ</a>
+          <a class="link link-hover">Contact Us</a>
+        </div>
+        <div>
+          <span class="text-[#1C1C1C] text-xl font-semibold mb-4"
+            >Subscribe to Our Newsletter</span
+          >
+          <div class="form-control w-52 md:w-80">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Email address"
+                class="bg-transparent border-b-2 border-[#494949] outline-none py-4 md:w-64"
+              />
+              <button class="btn btn-back absolute top-0 right-0 rounded-full">
+                <i class="fa-solid fa-chevron-right" style="color: #ffffff"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer footer-center p-4 text-base-content">
+        <p class="text-[#494949] font-medium">
+          © 2027 UIDesign.to - All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
